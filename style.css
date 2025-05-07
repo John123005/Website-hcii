@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a.highlight {
+  background: #8053ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.layer {
+  height: 100vh;
+  padding: 80px 40px;
+  font-size: 40px;
+  font-weight: 500;
+  background-image: url('bcgraham.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  backdrop-filter: blur(10px);
+}
+
+.layer1 {
+  height: 100vh;
+  padding: 80px 40px;
+  font-size: 40px;
+  font-weight: 500;
+  background-image: url('bcgraham.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  backdrop-filter: blur(10px);
+}
+
+.layer2 {
+  height: 100vh;
+  padding: 80px 40px;
+  font-size: 40px;
+  font-weight: 500;
+  background-image: url('bcgraham.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+   flex-direction: column;
+  justify-content: center;
+  display: flex;
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  background: #d57a32;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-img {
+  background-image: url('bombardino.png');
+  background-size: cover;
+  background-position: center;
+  width: 800px;
+  height: 800px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: #999;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 90%;
+  color: #ccc;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.photo-box {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.photo-box:hover {
+  transform: scale(1.03);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .layer, .layer1, .layer2 {
+    font-size: 1.2rem;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .photo-box img {
+    height: 200px;
+  }
+}
